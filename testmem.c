@@ -10,7 +10,7 @@ int main (int argc, char* argv[]) {
         mem_mb = atoi(argv[1]);
         timeout = atoi(argv[2]);
     }
-    printf("%s: allcating %d MB and sleeping for %d seconds. \n",argv[0],mem_mb,timeout);
+    printf("%s: allocating %d MB and sleeping for %d seconds. \n",argv[0],mem_mb,timeout);
     fflush(stdout);
     p = (char*) malloc(mem_mb*1024*1024);
     memset(p,0xff,mem_mb*1024*1024);

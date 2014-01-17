@@ -14,7 +14,7 @@ int main (int argc, char* argv[]) {
     fflush(stdout);
     p = (char*) malloc(mem_mb*1024*1024);
     if(NULL == p) {
-        printf("failed to allocatte memory.. exit. \n");
+        printf("failed to allocate memory.. exit. \n");
         return 0;
     }
     memset(p,0xff,mem_mb*1024*1024);
